@@ -1,0 +1,265 @@
+/*
+Theme Name: Cassini
+Theme URI:
+Description: 
+Version: 0.0
+Author: Nicole Coleman
+Author URI: http://www.stanford.edu/~cnc/design
+Tags: 
+
+parchment: 237, 233, 225
+green: 141, 147, 95
+Red: 217, 76, 41
+blue: 154, 170, 183
+brown: 115, 99, 87
+
+*/
+
+@import url("css/reset.css");
+@import url("css/text.css");
+@import url("type/type.css");
+
+
+.boxout  {
+border:1px solid #CCCCCC;
+float:right;
+margin-bottom:0.5em;
+margin-left:2em;
+padding:1em 2em;
+width:20%;
+}
+
+
+
+html, body {
+	/*background:url(images/parchment.png) repeat fixed top left, url(images/cassini.png) no-repeat top left;*/ 
+	background:url(images/parchment.png) top left repeat #ebe7de;
+	color:rgb(115, 99, 87); 
+	margin:0; 
+	padding:0; 
+	line-height:1.5; 
+	font: normal normal normal 1em/1.5em BenthamRegular, Baskerville,Garamond,'Adobe Caslon Pro',Palatino,'Times New Roman',Georgia,serif;
+	}
+	
+body.single #container {
+margin-top:20px;
+}
+
+
+.pi li {display:inline; margin-right:4em;}
+
+#login {
+z-index:2000;
+position:absolute;
+top:2px;
+right:6px;
+}
+
+#map { height: 400px;}
+#map .canvas { position: relative; }
+
+.mapborder {
+min-height:600px;
+width:1080px;
+border-image: url('image/corners_p3.png') 78 78 78 78 round round;
+-moz-border-image: url('images/corners_p3.png') 78 78 78 78 round round;
+-webkit-border-image: url('images/corners_p3.png') 78 78 78 78 round round;
+border-width: 78px;
+}
+
+#content {
+margin-top:20px;
+border-radius: 8px;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+}
+
+
+#homeside {
+text-align:center;
+}
+
+.project-title {
+font: normal normal normal 1.5em/1.5em BeautifulESRegular, Baskerville,Garamond,'Adobe Caslon Pro',Palatino,'Times New Roman',Georgia,serif;
+}
+
+
+div.entry {
+background-color: rgba(250, 250, 250,0.6);
+z-index:100;
+box-shadow: 4px 4px 4px #aaaaaa;
+-moz-box-shadow: 4px 4px 4px #aaaaaa;
+-webkit-box-shadow: 4px 4px 4px #aaaaaa;
+border-radius: 8px;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+padding: 15px 15px 15px 15px;
+-webkit-column-count: 2;
+-webkit-column-gap: 30px;
+-moz-column-count: 2;
+-moz-column-gap: 30px;
+}
+
+
+.columns{
+clear: both;
+width: 330px;
+padding: 0 0 20px 0;
+line-height: 22px;
+}
+
+.colleft{
+float: left;
+width: 130px;
+line-height: 22px;
+}
+
+.colright{
+float: right;
+width: 130px;
+line-height: 22px;
+}
+
+ul{
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+ul li{
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+
+@media all
+{
+
+
+
+   h2{ margin:1em 0 1em 0;}
+   h2 { clear:both; }
+   h2 { font-size: 138.5%; line-height:1.4; }
+   h3 {font-weight:normal; padding-top:1.2em; margin:0 0 .6em 0; }
+   h3.tight {padding-top:0}
+   h5 { font-size: 100%; font-weight:normal; color:rgb(217,76,41); }
+
+   blockquote p { font-size:18px; line-height:21px; }
+   blockquote cite { font-size:12px; line-height:15px; display:block; }
+   
+   .supersized { font-size:120%; }
+   .downsized { font-size:88%; }
+   
+   blockquote.callout h3 { text-transform:uppercase; }
+   
+   dl { margin-left:0; }
+   dt, dd { font-weight:normal; }
+   
+   td, th { text-align:left; vertical-align:top; }
+   
+   
+}
+
+/* SCREEN: layout, menu, callout quotes */
+@media screen
+{
+
+   #doc {width:4850px; margin:0; text-align:left;}
+      
+   a:link, a:visited { color: #344055;  text-decoration:none;} 
+   a:hover, a:active { color: #54698a; text-decoration:underline;} 
+   
+
+   .group:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+   .col .first { width:970px; float:left;}
+.col { width:1000px; float:left;}
+
+   .homepage { width:870px; margin:50px 50px 0 50px; padding:0 0 50px 0; }
+   .page { width:870px; margin:50px 50px 0 200px; padding:0 0 50px 0; }
+
+      .page{ background:rgba(252, 252, 252, 0.6)}
+	#home.homepage {background: transparent url(images/cassini.png) no-repeat center top; height:770px;}
+   .left { float:left; width:240px; margin-top:1.5em; }
+   .full {float:right; width:515px; margin-right:60px; margin-top:1.5em; }
+
+   .full {width:725px; padding-left:80px;}
+   .header { width:870px; margin:0; padding:0; position: relative; }
+   .header img { z-index:1; display:block; }
+   .header p { color:#8f9498; font-size: 11px; text-align:right; margin:.5em 1.5em 0 0; padding:0; }
+   .header blockquote { z-index:2; background:#444D54; background-color:rgba(68,77,84,.70);  position:absolute; left:0; top:30%; margin:0; padding:2em; width:400px; }
+   .header blockquote p { color:#fff; margin:0 0 1em 0; font-size:1.4em; text-align:left; }
+   .header blockquote cite { font-size:.9em; color:#fff; margin:0; }
+   
+
+   
+   /*safari/chrome only*/
+   .left ol li a { -webkit-transition: background-color 0.25s linear; }
+
+
+   .left blockquote { margin:0 0 0 60px; padding:0; width:180px; }
+   .left blockquote img { display:block; margin-bottom:1em; }
+
+   h3, blockquote p { color:rgb(217,76,41);  }
+   blockquote cite { color:#606970;  }
+
+   blockquote.callout { background:rgba(153, 0, 0, 0.8) none repeat scroll 0 0; padding:20px 20px 10px 10px; width:485px; float:right; margin:2.5em 0px 40px 0px; } 
+   
+   blockquote.callout p,
+   blockquote.callout li,
+   blockquote.callout ul,
+   blockquote.callout h3 { color:#fff; margin-right:0;}
+   blockquote.callout h3 { padding-top:0; padding-left:12px; padding-bottom:0; letter-spacing:.05em}
+   blockquote.callout a:link, blockquote.callout a:visited { padding-left: 26px; background: transparent url(../img/arrow2.gif)no-repeat 12px 2px; color:#fff; font-size:13px; text-decoration:none; text-transform:uppercase; }
+   
+   blockquote.callout a:hover, blockquote.callout a:active { text-decoration:underline!important;}
+   
+   p.caption {margin:7px 0 0 60px; padding:0; width:180px;  color:#8f9498; font-size: 11px; line-height: 13px; padding:0; }
+   p.anchors { text-transform:uppercase; font-size: 85%; margin-bottom: 1.3em;}
+   p.anchors a { padding: 0 10px; }
+   p.anchors a.first {padding-left:0; }
+
+   
+   p.top { text-align:right; margin:0 60px; padding:0; text-transform:uppercase; font-size:11px;}
+   p.top.flush{ margin-right:0; }
+   
+   /* HOME */
+
+   .header { width:740px; padding:60px; margin:5px;  }
+   .header h1, 
+   .header h2, 
+   .header h3 { margin:0; font-weight:normal; line-height:1; }
+   .header h1 { font-size:40px; text-transform:uppercase; margin-bottom:6px; }
+	#home .header {padding-bottom:10px; text-align:center; }
+    #home .header h1 {color:transparent; background: rgba(252, 252, 252, 0.6) url(images/logo_300.png) no-repeat center 10px; padding: 20px; width:300px; height: 300px; margin: 10px auto;-moz-border-radius: 170px;
+	-webkit-border-radius: 170px;}
+	#home .header h1 span {margin-left: -999999;}
+   #home .header h2 { width: 100%; text-align:center; font-size:28px; margin:0; padding:0; border-bottom:none; }
+   .header h3 { font-size:28px; padding-top:0;}
+   #home .full { margin-top:0; }
+   .full { padding-bottom:60px; }
+   #home .video {width:100%; padding:0 235px 20px 235px;}
+
+}
+
+/* PRINT: hide elements */
+@media print
+{
+   
+   .left ol, .header, p.top { display:none; }
+   /*.page { page-break-after:always; }*/
+   dl dt, dl dd { display:block!important; margin:0 0 1em 0; }
+   
+   blockquote { color:#333; margin:1em 0; padding:1em 0; border-top:1px solid #333; border-bottom:1px solid #333; }
+   blockquote:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+   .left blockquote img { float:left; margin-right:2em; }
+
+	.group .full h2 { font-size:1.5em; margin-top:3em; padding-bottom:.25em; border-bottom: 1px solid #000; text-transform:uppercase; }
+
+
+   a:link, a:visited { text-decoration:none; color:#000; }
+   a:link:after, a:visited:after { content:" [" attr(href) "] "; font-size:11px; color:#000; font-family:"Courier New", Courier, monospace }
+
+}
+
+img {border:0;}
